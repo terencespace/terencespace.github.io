@@ -1,0 +1,9 @@
+[user]
+  name = terence edwards
+  email = theterenceedwards@gmail.com
+
+[push]
+  default = current
+
+[color]
+  ui = true
