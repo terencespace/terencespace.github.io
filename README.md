@@ -1,1 +1,1 @@
-# [terence edwards](http://terence.space)
+## terence edwards
