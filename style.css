@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #808184;
+  font-family: "Work Sans", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  background-color: #fff;
+  color: #808184;
+}
+
+.flex-content {
+  flex: 1;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 8% auto 0 auto;
+}
+
+.text-sm { font-size: 1em; }
+.text-lg { font-size: 2.25em; }
+
+
+.icons-list {
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.icons-list li {
+  display: block;
+  position: relative;
+  float: left;
+
+  width: 25%;
+  padding-bottom: 31.25%;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  background: url("icons.svg");
+  background-size: 400%;
+}
+
+.markbrand-icon {
+  background-position: 0 0;
+}
+.product-icon {
+  background-position: 100% 0;
+}
+.drawing-icon {
+  background-position: 200% 0;
+}
+.clock-icon {
+  background-position: 300% 0;
+}
+.markbrand-icon:HOVER {
+  background-position: 0 100%;
+}
+.product-icon:HOVER {
+  background-position: 100% 100%;
+}
+.drawing-icon:HOVER {
+  background-position: 200% 100%; 
+}
+.clock-icon:HOVER {
+  background-position: 300% 100%;
+}
