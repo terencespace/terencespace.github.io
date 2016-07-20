@@ -58,27 +58,15 @@ body {
   background-size: 400%;
 }
 
-.markbrand-icon {
-  background-position: 0 0;
-}
-.product-icon {
-  background-position: 100% 0;
-}
-.drawing-icon {
-  background-position: 200% 0;
-}
-.clock-icon {
-  background-position: 300% 0;
-}
-.markbrand-icon:HOVER {
-  background-position: 0 100%;
-}
+.markbrand-icon { background-position-x: 0; }
+.clock-icon { background-position-x: 100%; }
+.drawing-icon { background-position-x: 200%; }
+.product-icon { background-position-x: 300%; }
+
+.icon.active,
+.markbrand-icon:HOVER,
+.clock-icon:HOVER,
+.drawing-icon:HOVER,
 .product-icon:HOVER {
-  background-position: 100% 100%;
-}
-.drawing-icon:HOVER {
-  background-position: 200% 100%; 
-}
-.clock-icon:HOVER {
-  background-position: 300% 100%;
+  background-position-y: 100%;
 }
