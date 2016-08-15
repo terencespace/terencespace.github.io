@@ -75,7 +75,7 @@ body {
 	width: 98%;
   max-width: 800px;
   white-space:nowrap; 
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .gallery-item {
