@@ -57,9 +57,16 @@ body {
 .drawing-icon   { background-position: 200% 0; }
 .clock-icon     { background-position: 300% 0; }
 
+.markbrand-icon.active,
 .markbrand-icon:HOVER { background-position: 0 100%; }
+
+.product-icon.active,
 .product-icon:HOVER   { background-position: 100% 100%; }
+
+.drawing-icon.active,
 .drawing-icon:HOVER   { background-position: 200% 100%; }
+
+.clock-icon.active,
 .clock-icon:HOVER     { background-position: 300% 100%; }
 
 .gallery-container {
