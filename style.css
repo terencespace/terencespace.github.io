@@ -12,6 +12,7 @@ body {
 .flex-container {
   display: flex;
   min-height: 90vh;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -21,8 +22,8 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
-  margin: 4% auto;
+  max-width: 650px;
+  margin: 60px auto 0 auto;
 }
 
 .text-sm { font-size: 1em; }
@@ -53,30 +54,41 @@ body {
 }
 
 .markbrand-icon { background-position: 0 0; }
-.product-icon   { background-position: 100% 0; }
+.clock-icon   { background-position: 100% 0; }
 .drawing-icon   { background-position: 200% 0; }
-.clock-icon     { background-position: 300% 0; }
+.product-icon     { background-position: 300% 0; }
 
 .markbrand-icon.active,
 .markbrand-icon:HOVER { background-position: 0 100%; }
 
-.product-icon.active,
-.product-icon:HOVER   { background-position: 100% 100%; }
+.clock-icon.active,
+.clock-icon:HOVER   { background-position: 100% 100%; }
 
 .drawing-icon.active,
 .drawing-icon:HOVER   { background-position: 200% 100%; }
 
-.clock-icon.active,
-.clock-icon:HOVER     { background-position: 300% 100%; }
+.product-icon.active,
+.product-icon:HOVER     { background-position: 300% 100%; }
 
 .gallery-container {
   display: block;
-  max-width: 700px;
+	width: 98%;
+  max-width: 800px;
   white-space:nowrap; 
   overflow-x: scroll;
 }
 
 .gallery-item {
   display: inline-block;
-  height: 500px;
+  height: 420px;
+}
+.gallery-container::-webkit-scrollbar {
+	height: 6px;
+}
+.gallery-container::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: #808184;
+	width: 30px;
 }
