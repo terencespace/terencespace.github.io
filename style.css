@@ -4,16 +4,15 @@
 }
 
 body {
-  background-color: #808184;
   font-family: "Work Sans", sans-serif;
+  border-bottom: 50px solid #808184;
+  color: #808184;
 }
 
 .flex-container {
   display: flex;
   min-height: 90vh;
   flex-direction: column;
-  background-color: #fff;
-  color: #808184;
 }
 
 .flex-content {
@@ -23,7 +22,7 @@ body {
 .container {
   width: 90%;
   max-width: 600px;
-  margin: 8% auto 0 auto;
+  margin: 4% auto;
 }
 
 .text-sm { font-size: 1em; }
@@ -31,14 +30,13 @@ body {
 
 .icons-list {
   list-style: none;
-  overflow: hidden;
   width: 100%;
 }
 
 .icons-list li {
-  display: block;
-  position: relative;
+  display: inline-block;
   float: left;
+  position: relative;
   width: 25%;
   padding-bottom: 31.25%;
 }
@@ -54,15 +52,24 @@ body {
   background-size: 400%;
 }
 
-.markbrand-icon { background-position-x: 0; }
-.clock-icon { background-position-x: 100%; }
-.drawing-icon { background-position-x: 200%; }
-.product-icon { background-position-x: 300%; }
+.markbrand-icon { background-position: 0 0; }
+.product-icon   { background-position: 100% 0; }
+.drawing-icon   { background-position: 200% 0; }
+.clock-icon     { background-position: 300% 0; }
 
-.icon.active,
-.markbrand-icon:HOVER,
-.clock-icon:HOVER,
-.drawing-icon:HOVER,
-.product-icon:HOVER {
-  background-position-y: 100%;
+.markbrand-icon:HOVER { background-position: 0 100%; }
+.product-icon:HOVER   { background-position: 100% 100%; }
+.drawing-icon:HOVER   { background-position: 200% 100%; }
+.clock-icon:HOVER     { background-position: 300% 100%; }
+
+.gallery-container {
+  display: block;
+  max-width: 700px;
+  white-space:nowrap; 
+  overflow-x: scroll;
+}
+
+.gallery-item {
+  display: inline-block;
+  height: 500px;
 }
