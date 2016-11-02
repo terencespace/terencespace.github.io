@@ -12,18 +12,18 @@ body {
 .flex-container {
   display: flex;
   min-height: 90vh;
-  width: 100%;
+  width: 90%;
+  max-width: 650px;
+  margin: 60px auto 0 auto;
   flex-direction: column;
 }
 
 .flex-content {
+  margin-top: 60px;
   flex: 1;
 }
 
 .container {
-  width: 90%;
-  max-width: 650px;
-  margin: 60px auto 0 auto;
 }
 
 .text-sm { font-size: 1em; }
