@@ -5,8 +5,12 @@
 
 body {
   font-family: sans-serif;
-  border-bottom: 50px solid #808184;
-  color: #808184;
+  color: #fff;
+  background-color: #808184;
+}
+
+.white {
+  background-color: #fff;
 }
 
 .container,
@@ -18,8 +22,8 @@ body {
 
 .flex-container {
   display: flex;
-  min-height: 90vh;
-  margin: 60px auto 0 auto;
+  min-height: 80vh;
+  padding-top: 60px;
   flex-direction: column;
 }
 
