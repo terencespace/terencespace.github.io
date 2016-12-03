@@ -9,11 +9,16 @@ body {
   color: #808184;
 }
 
+.container,
+.flex-container {
+  margin: auto;
+  max-width: 650px;
+  width: 95%;
+}
+
 .flex-container {
   display: flex;
   min-height: 90vh;
-  width: 90%;
-  max-width: 650px;
   margin: 60px auto 0 auto;
   flex-direction: column;
 }
@@ -23,22 +28,26 @@ body {
   flex: 1;
 }
 
-.container {
-}
-
 .text-sm { font-size: 1em; }
 .text-lg { font-size: 2.25em; }
+.text-right { text-align: right; }
 
 .header {
   display: block;
-  width: 50%;
-  padding-bottom: 12.5%;
+  width: 40%;
+  padding-bottom: 10%;
   background: url("header.svg");
   background-size: 100%;
   background-position: 0 0;
 }
 
 .header:HOVER { background-position: 0 100%; }
+
+.footer {
+  padding-top: 10px;
+  background-color: #808184;
+  color: #fff;
+}
 
 .icons-list {
   list-style: none;
@@ -50,27 +59,32 @@ body {
   display: inline-block;
   float: left;
   width: 25%;
-  padding-bottom: 30%;
+  padding-bottom: 25%;
 }
 
 .icon {
   display: block;
   position: absolute;
-  top: 10; right: 10;
-  left: 10; bottom: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: url("icons.svg");
-  background-size: 400%;
+  background-size: 500%;
 }
 
-.markbrand-icon       { background-position: 0 0; }
-.clock-icon           { background-position: 100% 0; }
-.drawing-icon         { background-position: 200% 0; }
-.product-icon         { background-position: 300% 0; }
-.markbrand-icon.active,
-.markbrand-icon:HOVER { background-position: 0 100%; }
-.clock-icon.active,
-.clock-icon:HOVER     { background-position: 100% 100%; }
-.drawing-icon.active,
-.drawing-icon:HOVER   { background-position: 200% 100%; }
-.product-icon.active,
-.product-icon:HOVER   { background-position: 300% 100%; }
+.graphics-icon { background-position:   0% 0; }
+.graphics-icon.active,
+.graphics-icon:HOVER { background-position: 0 100%; }
+
+.products-icon { background-position: 150% 0; }
+.products-icon.active,
+.products-icon:HOVER { background-position: 150% 100%; }
+
+.drawings-icon { background-position: 300% 0; }
+.drawings-icon.active,
+.drawings-icon:HOVER { background-position: 300% 100%; }
+
+.contact-icon { background-position: 200% 0; }
+.contact-icon.active,
+.contact-icon:HOVER { background-position: 200% 100%; }
