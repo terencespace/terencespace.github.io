@@ -1,0 +1,27 @@
+---
+layout: default
+title: Terence Edwards | drawings
+---
+
+<link href="{{ site.github.url }}/jquery.bxslider.css" rel="stylesheet" />
+
+<ul class="bxslider">
+  <li><img src="IMG_0067.jpg" width=100% height=auto></li>
+  <li><img src="IMG_0068.jpg" width=100% height=auto></li>
+  <li><img src="IMG_0070.jpg" width=100% height=auto></li>
+  <li><img src="IMG_0071.jpg" width=100% height=auto></li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ site.github.url }}/lib/jquery.bxslider.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".bxslider").bxSlider({
+      adaptiveHeight: true,
+      keyboardEnabled: true,
+      pager: false,
+      captions: true
+    });
+  });
+</script>
+
