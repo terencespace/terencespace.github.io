@@ -1,0 +1,29 @@
+---
+layout: default
+title: Terence Edwards | graphics
+---
+
+<link href="{{ site.github.url }}/jquery.bxslider.css" rel="stylesheet" />
+
+<ul class="bxslider">
+  <li><img src="avo.png" width=100% height=auto></li>
+  <li><img src="iPad stand maple.jpg" width=100% height=auto></li>
+  <li><img src="lexan stool.png" width=100% height=auto></li>
+  <li><img src="macbook rosewood.jpg" width=100% height=auto></li>
+  <li><img src="macbook walnut.jpg" width=100% height=auto></li>
+  <li><img src="terminal installation.jpg" width=100% height=auto></li>
+  <li><img src="walnut detail.jpg" width=100% height=auto></li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ site.github.url }}/lib/jquery.bxslider.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".bxslider").bxSlider({
+      adaptiveHeight: true,
+      keyboardEnabled: true,
+      pager: false,
+      captions: true
+    });
+  });
+</script>
