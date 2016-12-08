@@ -38,8 +38,8 @@ body {
 
 .header {
   display: block;
-  width: 40%;
-  padding-bottom: 10%;
+  width: 30%;
+  padding-bottom: 7.5%;
   background: url("header.svg");
   background-size: 100%;
   background-position: 0 0;
