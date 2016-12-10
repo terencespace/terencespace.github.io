@@ -5,36 +5,14 @@
 
 body {
   font-family: sans-serif;
-  color: #fff;
-  background-color: #808184;
+  color: #808184;
 }
 
-.white {
-  background-color: #fff;
-}
-
-.container,
-.flex-container {
-  margin: auto;
+.container {
+  margin: 60px auto;
   max-width: 650px;
   width: 95%;
 }
-
-.flex-container {
-  display: flex;
-  min-height: 80vh;
-  padding-top: 60px;
-  flex-direction: column;
-}
-
-.flex-content {
-  margin-top: 60px;
-  flex: 1;
-}
-
-.text-sm { font-size: 1em; }
-.text-lg { font-size: 2.25em; }
-.text-right { text-align: right; }
 
 .header {
   display: block;
