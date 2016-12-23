@@ -71,3 +71,28 @@ body {
 .contact-icon { background-position: 200% 0; }
 .contact-icon.active,
 .contact-icon:HOVER { background-position: 200% 100%; }
+
+ul.image-gallery {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-gallery > li {
+  display: inline;
+}
+
+ul.image-gallery::-webkit-scrollbar-track {
+  border: 1px solid #808184;
+  border-radius: 3px;
+  background-color: #fff;
+}
+ul.image-gallery::-webkit-scrollbar {
+  background-color: #fff;
+  height: 6px;
+}
+ul.image-gallery::-webkit-scrollbar-thumb {
+  background-color: #808184;
+  border-radius: 3px;
+}
