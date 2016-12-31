@@ -33,6 +33,7 @@ body {
 }
 
 .icons-list {
+  margin-top: 25%;
   list-style: none;
   width: 100%;
 }
