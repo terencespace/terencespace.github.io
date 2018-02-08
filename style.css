@@ -10,7 +10,7 @@ body {
 
 .container {
   margin: 60px auto;
-  max-width: 650px;
+  max-width: 800px;
   width: 95%;
 }
 
@@ -80,8 +80,39 @@ ul.image-gallery {
   white-space: nowrap;
 }
 
-.image-gallery > li {
-  display: inline;
+ul.image-gallery > li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 32px;
+  border-radius: 3pt;
+}
+
+.blurb {
+  opacity: 0;
+  background-color: #808184;
+  color: #fff;
+  line-height: 1.5em;
+  padding: 32px;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  white-space: normal;
+  transition: opacity 125ms ease-in;
+}
+
+.blurb:HOVER {
+  opacity: 0.95;
+}
+
+.blurb > .expand {
+  position: absolute;
+  bottom: 16; left: 32; right: 32;
+  text-align: center;
+}
+
+.blurb a {
+  color: #fff;
+  text-decoration: none;
 }
 
 ul.image-gallery::-webkit-scrollbar-track {
